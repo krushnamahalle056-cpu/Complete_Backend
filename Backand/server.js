@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
+  // data of 6 students
   const data = [
     {
       id : 1,
