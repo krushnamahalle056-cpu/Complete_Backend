@@ -9,10 +9,14 @@ app.get('/', (req, res) => {
 
 app.get('/data', (req, res) => {
   // data of 6 students
-  const data = [
-    
+  const Jokes = [
+    {
+        id: 1,
+        title: "Programming Joke",
+        content: "Why do programmers prefer dark mode? Because light attracts bugs!"
+    },
   ];
-  res.send(data);
+  res.send(Jokes);
 });
 
 app.listen(process.env.PORT || 4000, () => {
