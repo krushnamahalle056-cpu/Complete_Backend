@@ -10,40 +10,7 @@ app.get('/', (req, res) => {
 app.get('/data', (req, res) => {
   // data of 6 students
   const data = [
-    {
-      id : 1,
-      name: "Krushna Mahalle",
-      email: " example@example.com"
-    } ,
-    {
-      id : 2,
-      name: "sahil Mahalle",
-      email: " example@example1.com"
-    },
     
-    {
-      id : 3,
-      name: "hariom narwade",
-      email: " example@example3.com"
-    } ,
-    
-    {
-      id : 4,
-      name: "sarthak tayde",
-      email: " example@example4.com"
-    },
-    
-    {
-      id : 5,
-      name: "Sarthak patil",
-      email: " example@example5.com"
-    } ,
-    
-    {
-      id : 6,
-      name: "Vishal Mahalle",
-      email: " example@example6.com"
-    }
   ];
   res.send(data);
 });
