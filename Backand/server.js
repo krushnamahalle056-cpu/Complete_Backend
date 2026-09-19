@@ -19,6 +19,11 @@ app.get('/data', (req, res) => {
         title: "JavaScript Joke",
         content: "Why did JavaScript developer go broke? Because he used up all his cache!"
     },
+    {
+        id: 3,
+        title: "Developer Joke",
+        content: "A programmer's favorite place? The terminal!"
+    },
   ];
   res.send(Jokes);
 });
