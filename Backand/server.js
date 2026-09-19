@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.send('server created');
 });
 
-app.get('/data', (req, res) => {
+app.get('/jokes', (req, res) => {
   // data of 6 students
   const Jokes = [
     {
