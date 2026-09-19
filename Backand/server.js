@@ -29,6 +29,11 @@ app.get('/data', (req, res) => {
         title: "Computer Joke",
         content: "Why was the computer cold? It left its Windows open!"
     },
+    {
+        id: 5,
+        title: "Coding Joke",
+        content: "There are 10 types of people: those who understand binary and those who don't."
+    }
   ];
   res.send(Jokes);
 });
