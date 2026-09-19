@@ -15,6 +15,10 @@ app.get('/data', (req, res) => {
         title: "Programming Joke",
         content: "Why do programmers prefer dark mode? Because light attracts bugs!"
     },
+    {    id: 2,
+        title: "JavaScript Joke",
+        content: "Why did JavaScript developer go broke? Because he used up all his cache!"
+    },
   ];
   res.send(Jokes);
 });
