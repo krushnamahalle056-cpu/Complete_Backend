@@ -24,6 +24,11 @@ app.get('/data', (req, res) => {
         title: "Developer Joke",
         content: "A programmer's favorite place? The terminal!"
     },
+    {
+        id: 4,
+        title: "Computer Joke",
+        content: "Why was the computer cold? It left its Windows open!"
+    },
   ];
   res.send(Jokes);
 });
