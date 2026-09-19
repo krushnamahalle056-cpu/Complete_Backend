@@ -1,13 +1,13 @@
 require("dotenv").config();                     // for use of .env file
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => {
   res.send('server created');
 });
 
-app.get('/api', (req, res) => {
+app.get('/data', (req, res) => {
   // data of 6 students
   const data = [
     {
