@@ -4,19 +4,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import axios from 'axios'
+import { useEffect } from "react";
 
 function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:4000/jokes')
+    axios.get('/api/jokes')
       .then(response => {
         setJokes(response.data)
       })
       .catch((error) => {
         console.error( error)
       })
-  })
+  }, [])
 
   return (
 
