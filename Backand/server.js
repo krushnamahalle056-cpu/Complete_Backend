@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.send('server created');
 });
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
   // data of 6 students
   const Jokes = [
     {
