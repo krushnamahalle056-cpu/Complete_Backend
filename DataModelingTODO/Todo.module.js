@@ -12,6 +12,10 @@ const todoSchema = new mongoose.Schema({
   completed: {
     type: Boolean,
     default: false
+  },
+  pending : {
+    type: Boolean,
+    default: true
   }
 });
 
