@@ -22,7 +22,13 @@ const hospitalSchema = new mongoose.Schema({
     pincode:{
         type: String,   // pincode can be string because some countries have alphanumeric pincode
         required: true
-    }
+    },
+    specializedIn:[
+        {
+            type: String,
+            required: true
+        },
+    ],
 },{timestamps:true});
 
 export const Hospital = mongoose.model('Hospital', hospitalSchema);
