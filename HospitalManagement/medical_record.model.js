@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
 
-const hospitalrecordSchema = new mongoose.Schema({
-    
+const medicalRecordSchema = new mongoose.Schema({
+    patientName:{
+        type: String,
+        required: true
+    }
 },{timestamps:true});
 
-export const HospitalRecord = mongoose.model('HospitalRecord', hospitalrecordSchema);
+export const MedicalRecord = mongoose.model('MedicalRecord', medicalRecordSchema);
