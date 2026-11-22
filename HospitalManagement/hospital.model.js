@@ -23,6 +23,10 @@ const hospitalSchema = new mongoose.Schema({
         type: String,   // pincode can be string because some countries have alphanumeric pincode
         required: true
     },
+    facility:{
+        type: String,
+        required: true
+    },
     specializedIn:[
         {
             type: String,
