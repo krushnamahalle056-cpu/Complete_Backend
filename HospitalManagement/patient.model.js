@@ -17,6 +17,10 @@ const patientSchema = new mongoose.Schema({
         type: Number, 
         required: true
     },
+    reletiveInfo:{
+        type: String,
+        required: true
+    },
     bloodGroup:{
         type: String,
         required: true
