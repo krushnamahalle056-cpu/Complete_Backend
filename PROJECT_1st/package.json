@@ -1,0 +1,17 @@
+{
+  "name": "project_1st",
+  "version": "1.0.0",
+  "description": "chai our code course",
+  "keywords": [
+    "javascript",
+    "backend",
+    "chai"
+  ],
+  "license": "ISC",
+  "author": "krushna mahalle",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
